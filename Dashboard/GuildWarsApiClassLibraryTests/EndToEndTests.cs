@@ -9,7 +9,9 @@ namespace GuildWarsApiClassLibraryTests
         public void ShouldGetContentsOfMaterialStorage()
         {
             //Arrange
-            IOrchestrator orchestrator = new Orchestrator();
+            IApiPort apiPort = new ApiPort();
+            IApiAdapter apiAdapter = new ApiAdapter(apiPort);
+            IOrchestrator orchestrator = new Orchestrator(apiAdapter);
 
             //Act
             List<string> materials = orchestrator.GetMaterialStorage();

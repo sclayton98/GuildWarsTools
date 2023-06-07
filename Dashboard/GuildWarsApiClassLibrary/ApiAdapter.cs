@@ -1,6 +1,6 @@
 ﻿namespace GuildWarsApiClassLibrary
 {
-    internal interface IApiAdapter
+    public interface IApiAdapter
     {
         List<string> GetMaterialStorage();
     }
@@ -8,6 +8,11 @@
     public class ApiAdapter : IApiAdapter
     {
         private IApiPort _apiPort;
+
+        public ApiAdapter(IApiPort apiPort)
+        {
+            _apiPort = apiPort;
+        }
 
         public List<string> GetMaterialStorage()
         {

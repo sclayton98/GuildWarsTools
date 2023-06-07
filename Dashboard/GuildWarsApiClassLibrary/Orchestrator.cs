@@ -9,8 +9,9 @@
     {
         private IApiAdapter _apiAdapter;
 
-        public Orchestrator()
+        public Orchestrator(IApiAdapter apiAdapter)
         {
+            _apiAdapter = apiAdapter;
         }
 
         public List<string> GetMaterialStorage()
