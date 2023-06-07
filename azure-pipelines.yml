@@ -5,5 +5,5 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
+- script: echo Guild Wars Tools
   displayName: 'Run a one-line script'
