@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "Dashboard.csproj", "{C990280D-268C-4F0D-A42C-88527923F0D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuildWarsApiClassLibrary", "..\GuildWarsApiClassLibrary\GuildWarsApiClassLibrary.csproj", "{60FED8F6-05C6-442B-B201-3004703CF568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuildWarsApiClassLibraryTests", "..\GuildWarsApiClassLibraryTests\GuildWarsApiClassLibraryTests.csproj", "{652165A0-8D9D-463F-B699-B2D8F4E0B8E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C990280D-268C-4F0D-A42C-88527923F0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C990280D-268C-4F0D-A42C-88527923F0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C990280D-268C-4F0D-A42C-88527923F0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FED8F6-05C6-442B-B201-3004703CF568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FED8F6-05C6-442B-B201-3004703CF568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FED8F6-05C6-442B-B201-3004703CF568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FED8F6-05C6-442B-B201-3004703CF568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652165A0-8D9D-463F-B699-B2D8F4E0B8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652165A0-8D9D-463F-B699-B2D8F4E0B8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652165A0-8D9D-463F-B699-B2D8F4E0B8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652165A0-8D9D-463F-B699-B2D8F4E0B8E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
