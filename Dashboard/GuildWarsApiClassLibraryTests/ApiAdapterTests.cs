@@ -17,7 +17,7 @@ namespace GuildWarsApiClassLibraryTests
             apiAdapter.GetMaterialStorage();
 
             //Assert
-            mockPort.Verify(x => x.GetMaterialStorage(), Times.Once());
+            mockPort.Verify(x => x.QueryApi(""), Times.Once());
         }
     }
 }

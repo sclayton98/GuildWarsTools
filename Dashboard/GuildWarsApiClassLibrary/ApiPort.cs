@@ -2,14 +2,21 @@
 {
     public interface IApiPort
     {
-        List<string> GetMaterialStorage();
+        HttpResponseMessage QueryApi(string endpointUrl);
     }
 
     public class ApiPort : IApiPort
     {
-        public List<string> GetMaterialStorage()
+        private HttpClient _httpClient;
+
+        public ApiPort(HttpClient httpClient)
         {
-            throw new NotImplementedException();
+            _httpClient = httpClient;
+        }
+
+        public HttpResponseMessage QueryApi(string endpointUrl)
+        {
+            return _httpClient.GetAsync(endpointUrl).Result;
         }
     }
 }

@@ -16,7 +16,10 @@
 
         public List<string> GetMaterialStorage()
         {
-            return _apiPort.GetMaterialStorage();
+            string materialStorageEndpoint = "";
+            HttpResponseMessage apiResponse = _apiPort.QueryApi(materialStorageEndpoint);
+
+            return null;
         }
     }
 }

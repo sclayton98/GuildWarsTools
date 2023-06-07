@@ -9,7 +9,8 @@ namespace GuildWarsApiClassLibraryTests
         public void ShouldGetContentsOfMaterialStorage()
         {
             //Arrange
-            IApiPort apiPort = new ApiPort();
+            HttpClient httpClient = null;
+            IApiPort apiPort = new ApiPort(httpClient);
             IApiAdapter apiAdapter = new ApiAdapter(apiPort);
             IOrchestrator orchestrator = new Orchestrator(apiAdapter);
 
